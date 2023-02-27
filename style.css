@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 237, 237);
+}
+
+/* desktop */
+
+.perfum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.per {
+    border-radius: 10px 0 0 10px;
+
+}
+
+.card {
+    display: grid;
+    row-gap: 13px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 30px 46px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin: 0;
+
+}
+
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price-one {
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: rgb(2, 167, 98);
+}
+
+.price-two {
+    text-decoration: line-through;
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+    background-color: rgb(2, 167, 98);
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.botao img {
+    margin-right: 8px;
+}
+
+.btn:hover {
+        background-color: rgb(0, 141, 82);
+        cursor: pointer;
+    }
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    
+}
+
+/* mobile */
+
+@media (max-width: 630px) {
+    .perfum {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .per {
+        border-radius: 10px 10px 0 0;
+        width: 322px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 0 30px 10px;
+    }
+
+    .card {
+        display: grid;
+        row-gap: 13px;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+        padding: 30px 49px;
+    }
+
+    .btn {
+        background-color: rgb(2, 167, 98);
+        padding: 10px 50px;
+        border-radius: 6px;
+        border: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    .botao img {
+        margin-right: 10px;
+        width: 16px;
+    }
+
+  .btn:hover {
+        background-color: rgb(0, 141, 82);
+    }
+
+    footer {
+        text-align: center;
+    }
+}
