@@ -2,12 +2,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(255, 237, 237);
-}
-
-/* desktop */body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 237, 237);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440;
+    min-height: 100vh;
+  font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;  
 }
 
 /* desktop */
@@ -16,7 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3em;
+  margin-top: 3rem;
+  
 }
 
 .per {
@@ -29,10 +31,11 @@ body {
     row-gap: 13px;
     background-color: #fff;
     border-radius: 0 10px 10px 0;
-    padding: 30px 35px;
+    padding: 33px 35px;
 }
 
 h1 {
+  font-family: 'Fraunces', serif;
     font-size: 2.5rem;
     line-height: 40px;
     margin: 0;
@@ -41,13 +44,15 @@ h1 {
 }
 
 
-p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    max-width: 250px;
+.perfun {
+   font-size: 14px;
+  font-weight: 500;
 }
 
 .text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  max-width: 265px; 
 }
 
 .price {
@@ -59,12 +64,14 @@ p {
 
 .price-one {
     font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Fraunces', serif;
     font-weight: 900;
     color: rgb(2, 167, 98);
 }
 
 .price-two {
+  font-family: 'Fraunces', serif;
+  font-weight: none;
     text-decoration: line-through;
 
 }
@@ -95,7 +102,7 @@ p {
 }
 
 footer {
-    margin-top: 25px;
+  font-size: 13px;
     text-align: center;
 }
 
@@ -114,7 +121,7 @@ footer a {
 
     .per {
         border-radius: 10px 10px 0 0;
-        width: 322px;
+        width: 311px;
         height: 250px;
         object-fit: cover;
         object-position: 0 30px 10px;
@@ -125,7 +132,7 @@ footer a {
         row-gap: 13px;
         background-color: #fff;
         border-radius: 0 0 10px 10px;
-        padding: 30px 49px;
+        padding: 30px 24px;
     }
 
     .btn {
@@ -148,148 +155,8 @@ footer a {
     }
 
     footer {
-        text-align: center;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 250px;
     }
-}
-
-.perfum {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3em;
-}
-
-.per {
-    border-radius: 10px 0 0 10px;
-
-}
-
-.card {
-    display: grid;
-    row-gap: 13px;
-    background-color: #fff;
-    border-radius: 0 10px 10px 0;
-    padding: 30px 46px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    line-height: 40px;
-    margin: 0;
-
-}
-
-
-p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-}
-
-.text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.price-one {
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
-    color: rgb(2, 167, 98);
-}
-
-.price-two {
-    text-decoration: line-through;
-
-}
-
-.botao {
-    display: flex;
-    justify-content: center;
-
-}
-
-.btn {
-    background-color: rgb(2, 167, 98);
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 800;
-}
-
-.botao img {
-    margin-right: 8px;
-}
-
-.btn:hover {
-        background-color: rgb(0, 141, 82);
-        cursor: pointer;
-    }
-
-footer {
-    margin-top: 25px;
-    text-align: center;
-}
-
-footer a {
-  color: blue;
-}
-/* mobile */
-
-@media (max-width: 630px) {
-    .perfum {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-
-    .per {
-        border-radius: 10px 10px 0 0;
-        width: 322px;
-        height: 250px;
-        object-fit: cover;
-        object-position: 0 30px 10px;
-    }
-
-    .card {
-        display: grid;
-        row-gap: 13px;
-        background-color: #fff;
-        border-radius: 0 0 10px 10px;
-        padding: 30px 49px;
-    }
-
-    .btn {
-        background-color: rgb(2, 167, 98);
-        padding: 10px 50px;
-        border-radius: 6px;
-        border: none;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: 800;
-    }
-
-    .botao img {
-        margin-right: 10px;
-        width: 16px;
-    }
-
-  .btn:hover {
-        background-color: rgb(0, 141, 82);
-    }
-
-    footer {
-        text-align: center;
-    }
-
-footer a {
-  color: blue;
-}
 }
